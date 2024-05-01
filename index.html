@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is happening</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="icon" type="image/png" href="jupiter.ico">
+
+    <script src="bootstrap.js"></script>
+    <style>
+        .hero-section {
+            background-image: url('heroimg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            position: relative; /* Add position relative for z-index */
+        }
+
+        .hero-section:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: inherit;
+            filter: blur(8px); /* Add blur effect */
+            z-index: -1; /* Send the blurred background behind other content */
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-section .btn {
+            font-size: 1.2rem;
+            padding: 10px 30px;
+        }
+        .hover-underline:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="navbar-brand">What is Happening?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Technology</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Space</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero-section">
+        <div class="container">
+            <h1>Welcome to What is Happening?</h1>
+            <p>See The Space Growing</p>
+            <a href="#" class="btn btn-dark">See Blogs</a>
+        </div>
+    </div>
+    <div class="container-fluid p-5 bg-dark text-white">
+        <h1>Introduction</h1>
+        <p>Welcome to "What is Happening?", your go-to blog for the latest updates and insights into the captivating realms of space and technology. Embark on a journey through the cosmos as we unravel the mysteries of the universe and delve into the cutting-edge innovations shaping our future. From awe-inspiring celestial phenomena to groundbreaking technological advancements, we're here to explore the frontiers of knowledge and discovery. Join us as we navigate the cosmos and decipher the wonders of space and technology together. Strap in and get ready to embark on an exhilarating voyage of exploration and enlightenment.</p>
+    </div>
+    <div class="container-fluid p-5 bg-dark text-white">
+        <div class="row">
+            <div class="col-md-6 text-md-end">
+                <img src="appollo.jpg" alt="image" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <a href="apolloxiii.html" class="text-white text-decoration-none hover-underline"><h1>Exploration & Discovery: Apollo 13 Mission</h1></a>
+                <p>In the vast expanse of space exploration, few missions have captured the collective imagination of humanity quite like Apollo 13. Launched on April 11, 1970, this mission was intended to be NASA's third crewed lunar landing. However, what ensued was a dramatic tale of resilience, ingenuity, and the triumph of the human spirit over adversity.</p>         
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-5 bg-dark text-white">
+        <div class="row">
+            <div class="col-md-6 text-md-end">
+                <a href="starship.html" class="text-white text-decoration-none hover-underline"><h1>Exploration & Discovery: Starship</h1></a>
+                <p>SpaceX's Starship project is at the forefront of space exploration, promising a revolutionary approach to interplanetary travel and colonization. With ambitions to ferry humans to Mars and beyond, Starship represents the next giant leap in humanity's quest to explore the cosmos.</p>         
+            
+                
+            </div>
+            <div class="col-md-6">
+                <img src="starship.webp" alt="image" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
